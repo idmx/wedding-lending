@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(243, 243, 214, 0.5),
+      rgba(243, 243, 214, 0.5)
     ),
     url("../shared/wreath.png") no-repeat 30% 100%;
   background-size: 210vw;
@@ -29,7 +29,7 @@
 
   @media screen and (max-width: 1441px) {
     padding: 0 50px 50px;
-    width: calc(50% - 100px);
+    width: calc(50% - 50px);
   }
 
   @media screen and (max-width: 1025px) {
