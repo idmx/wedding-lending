@@ -1,0 +1,178 @@
+.main-heroes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../shared/wreath.png") no-repeat 30% 100%;
+  background-size: 210vw;
+
+  @media screen and (max-width: 1025px) {
+    background-size: 410vw;
+  }
+
+  @media screen and (max-width: 769px) {
+    background-size: 510vw;
+  }
+}
+
+.main-heroes__paper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffffbb;
+  padding: 0 100px 100px;
+  width: calc(40% - 100px);
+
+  @media screen and (max-width: 1441px) {
+    padding: 0 50px 50px;
+    width: calc(50% - 100px);
+  }
+
+  @media screen and (max-width: 1025px) {
+    padding: 0 70px 70px;
+    width: calc(70% - 70px);
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 0 50px 50px;
+    width: calc(100% - 50px);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0 20px 20px;
+    width: calc(100% - 20px);
+  }
+}
+
+.main-heroes__guest,
+.main-heroes__text,
+.main-heroes__name {
+  font-family: "Great Vibes", serif;
+  color: var(--main-color);
+}
+
+.main-heroes__guest {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.main-heroes__description {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.main-heroes__date {
+  width: 6rem;
+  text-align: center;
+}
+
+.main-heroes__common-photo {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 100% / 70%;
+}
+
+.main-heroes__text,
+.main-heroes__name {
+  font-size: 2rem;
+}
+
+.main-heroes__text {
+  margin: 0;
+  text-align: center;
+}
+
+.main-heroes__name:nth-of-type(3n - 1) {
+  padding-bottom: 1.5rem;
+}
+
+.main-heroes__photo_container {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-top: 80%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-heroes__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-heroes__photo_positioned {
+  object-position: 100% 20%;
+}
+
+.main-heroes__addition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-heroes__addition:nth-of-type(3n - 3) {
+  border-top: 1px solid var(--main-color);
+  padding-top: 3rem;
+}
+
+.main-heroes__addition:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.main-heroes__addition_header {
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.main-heroes__addition_text {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.main-heroes__wait {
+  margin: 2rem 0;
+}
+
+.main-heroes__colors {
+  display: flex;
+  gap: 10px;
+}
+
+.main-heroes__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.orange {
+  background: var(--orange-color);
+}
+
+.green {
+  background: var(--green-color);
+}
+
+.red {
+  background: var(--red-color);
+}
+
+.blue {
+  background: var(--blue-color);
+}
+
+.dark-green {
+  background: var(--dark-green-color);
+}

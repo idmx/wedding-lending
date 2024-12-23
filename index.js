@@ -1,5 +1,5 @@
 const countdown = document.querySelector(".countdown");
-const targetDate = new Date("2025-08-23T11:00:00");
+const targetDate = new Date("2025-08-23T13:00:00");
 
 function updateCountdown() {
   const now = new Date();

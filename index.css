@@ -1,4 +1,7 @@
 @import url("./fonts.css");
+@import url("./styles/home-screen.css");
+@import url("./styles/main-heroes.css");
+@import url("./styles/vars.css");
 
 html {
   font-size: 32px;
@@ -27,144 +30,15 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Spectral", serif;
+  font-family: "El Messiri", serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .main {
   position: relative;
   overflow-x: hidden;
-}
-
-.home-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f5ecec;
-
-  animation: homeScreenAnimate 1.2s ease-in;
-}
-
-@keyframes homeScreenAnimate {
-  0% {
-    scale: 1.2;
-    opacity: 0;
-  }
-
-  50% {
-    scale: 1.5;
-    opacity: 0.5;
-  }
-
-  100% {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
-.home-screen__wreath {
-  position: absolute;
-  width: 170vw;
-  height: 120vh;
-  opacity: 0.5;
-  max-width: 1000px;
-  max-height: 1400px;
-  animation: homeScreenWreath 1s ease-in;
-
-  @media screen and (max-width: 1039px) {
-    scale: 0.9;
-  }
-
-  @media screen and (max-width: 539px) {
-    scale: 0.8;
-  }
-}
-
-@keyframes homeScreenWreath {
-  from {
-    scale: 0;
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.5;
-  }
-}
-
-.home-screen__invation {
-  text-transform: uppercase;
-  width: 9rem;
-  text-align: center;
-}
-
-.home-screen__date {
-  font-size: 1rem;
-}
-
-.home-screen__names,
-.home-screen__date,
-.home-screen__day,
-.home-screen__countdown,
-.home-screen__countdown-item {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.home-screen__names,
-.home-screen__date {
-  flex-direction: column;
-  text-align: center;
-  width: 150px;
-
-  @media screen and (max-width: 540px) {
-    width: 100px;
-  }
-}
-
-.home-screen__names {
-  font-size: 3rem;
-  margin: 10px;
-}
-
-.home-screen__names,
-.home-screen__welcome {
-  font-family: "Great Vibes", serif;
-}
-
-.home-screen__day {
-  position: relative;
-  left: -0.6rem;
-  font-size: 1.125rem;
-  gap: 20px;
-}
-
-.home-screen__day_bordered {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.home-screen__day_date {
-  font-size: 2.5rem;
-}
-
-.home-screen__welcome {
-  margin-top: 20px;
-  font-size: 2rem;
-}
-
-.home-screen__countdown {
-  margin-top: 40px;
-  font-size: 3rem;
-  gap: 40px;
-}
-
-.home-screen__countdown-item {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.home-screen__countdown-item_label {
-  font-size: 1.125rem;
 }
