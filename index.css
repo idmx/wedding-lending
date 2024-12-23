@@ -3,6 +3,7 @@
 @import url("./styles/home-screen.css");
 @import url("./styles/main-heroes.css");
 @import url("./styles/schedule.css");
+@import url("./styles/map.css");
 
 html {
   font-size: 32px;

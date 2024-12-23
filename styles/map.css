@@ -1,0 +1,25 @@
+.map {
+  width: 100%;
+  height: max-content;
+}
+
+.map__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.map__link {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.map__frame {
+  position: relative;
+  width: 100vw;
+  min-height: 400px;
+  height: 50vw;
+}
