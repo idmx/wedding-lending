@@ -29,27 +29,30 @@
 
 .home-screen__wreath {
   position: absolute;
-  width: 170vw;
-  height: 120svh;
-  opacity: 0.5;
+  width: 700px;
+  height: 840px;
   max-width: 1000px;
   max-height: 1400px;
   animation: homeScreenWreath 1s ease-in;
   z-index: 1;
 
-  @media screen and (min-width: 1441px) {
+  @media screen and (min-width: 1025px) {
     scale: 1.2;
   }
 
-  @media screen and (min-width: 1700px) {
-    scale: 1.5;
+  @media screen and (min-width: 2000px) {
+    scale: 1.6;
   }
 
-  @media screen and (max-width: 1039px) {
+  @media screen and (max-width: 770px) {
+    scale: 1;
+  }
+
+  @media screen and (max-width: 540px) {
     scale: 0.9;
   }
 
-  @media screen and (max-width: 539px) {
+  @media screen and (max-width: 400px) {
     scale: 0.8;
     max-height: 900px;
   }

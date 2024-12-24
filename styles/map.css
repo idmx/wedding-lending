@@ -21,5 +21,6 @@
   position: relative;
   width: 100vw;
   min-height: 400px;
+  max-height: 80vh;
   height: 50vw;
 }

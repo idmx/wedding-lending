@@ -2,12 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-      rgba(243, 243, 214, 0.5),
-      rgba(243, 243, 214, 0.5)
-    ),
-    url("../shared/wreath.png") no-repeat 30% 100%;
-  background-size: 210vw;
+  background: url("../shared/wreath3.png") repeat;
+  background-size: 100vw;
 
   @media screen and (max-width: 1025px) {
     background-size: 410vw;
@@ -23,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: #ffffffbb;
+  background-color: #ffffffce;
   padding: 0 100px 100px;
   width: calc(40% - 100px);
 
@@ -52,12 +48,12 @@
 .main-heroes__text,
 .main-heroes__name {
   font-family: "Great Vibes", serif;
-  color: var(--main-color);
 }
 
 .main-heroes__guest {
   margin-bottom: 0;
   font-size: 3rem;
+  color: var(--main-color);
 }
 
 .main-heroes__description {
@@ -78,7 +74,7 @@
 
 .main-heroes__text,
 .main-heroes__name {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .main-heroes__text {
@@ -121,13 +117,9 @@
   align-items: center;
 }
 
-.main-heroes__addition:nth-of-type(3n - 3) {
+.main-heroes__addition:nth-of-type(4n - 2) {
   border-top: 1px solid var(--main-color);
   padding-top: 3rem;
-}
-
-.main-heroes__addition:last-of-type {
-  margin-bottom: 1rem;
 }
 
 .main-heroes__addition_header {
@@ -143,7 +135,8 @@
 }
 
 .main-heroes__wait {
-  margin: 2rem 0;
+  font-size: 3rem;
+  margin: 2rem 0 0;
 }
 
 .main-heroes__colors {

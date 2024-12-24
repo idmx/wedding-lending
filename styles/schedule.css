@@ -43,7 +43,7 @@
 
 .schedule__list {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 2fr 5fr;
   gap: 3rem;
 }
 
