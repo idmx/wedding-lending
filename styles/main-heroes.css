@@ -137,6 +137,7 @@
 .main-heroes__wait {
   font-size: 3rem;
   margin: 2rem 0 0;
+  color: var(--main-color);
 }
 
 .main-heroes__colors {
