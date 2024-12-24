@@ -107,7 +107,7 @@
 }
 
 .main-heroes__photo_positioned {
-  object-position: 100% 20%;
+  object-position: 0 100%;
 }
 
 .main-heroes__addition {
